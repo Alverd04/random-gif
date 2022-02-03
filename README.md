@@ -23,3 +23,4 @@ Un cop us hagueu clonat la aplicació haureu de executar els següents comands:
 ## I ara què?
 
 Doncs ara a esperar al dia 23 de Febrer! Espero veure-us a tots!
+![image](https://user-images.githubusercontent.com/59662722/152339254-6421922c-4c47-41d9-9d73-a5e47baf2ff4.png)
