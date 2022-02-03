@@ -2,13 +2,17 @@
 
 ## Instruccions?
 
-1. Instalar npm, node i visual studio code.
+Us agraïria molt que tinguessiu els següents apunts descarregats per a poder seguir la exposició de forma més senzilla:
 
-npm i node: https://nodejs.org/en/download/
-visual studio code: https://code.visualstudio.com/
+https://drive.google.com/file/d/1MthcWMC_CaXJo8OfdsxA1yVWAy8i6bgT/view?usp=sharing
 
-2. Clonar el repositori a una carpeta.
-3. Obrir el repositori amb visual studio code.
+Dit això, us deixo amb els passos de instalació del repositori:
+  1. Instalar npm, node i visual studio code.
+    npm i node: https://nodejs.org/en/download/
+    visual studio code: https://code.visualstudio.com/
+
+  2. Clonar el repositori a una carpeta.
+  3. Obrir el repositori amb visual studio code.
 
 ## Que farem?
 
