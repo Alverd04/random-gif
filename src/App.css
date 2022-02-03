@@ -14,17 +14,17 @@
 }
 
 .gifSearch-searchInput-container {
-  margin-top: 16px;
+  margin: 16px 0;
   color: rgb(57, 57, 57);
 }
 
 .gifSearch-imageContainer {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  min-height: 400px;
 }
 
 @keyframes fadeIn {

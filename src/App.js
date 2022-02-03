@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import GifContainer from './components/GifContainer'
 import SearchInput from './components/Input'
+import searchGif from './http/searchGif'
 
 function App() {
   const [value, setValue] = useState('')
+  const [gifs, setGifs] = useState([])
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      searchGif({ query: value, limit: 1 }).then((gifs) => setGifs(gifs))
+    }, 300)
+    return () => clearTimeout(timer)
+  }, [value])
 
   const onChange = (value) => {
     setValue(value)
@@ -22,7 +31,7 @@ function App() {
         />
       </div>
       <div className='gifSearch-imageContainer'>
-        <GifContainer gifUrl='https://user-images.githubusercontent.com/59662722/152339294-15ae3954-5357-4197-b567-5f5470318c7f.gif' />
+        <GifContainer gifUrl={gifs[0]?.images.downsized.url} />
       </div>
     </div>
   )
