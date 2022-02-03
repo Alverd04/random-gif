@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import GifContainer from './components/GifContainer'
 import SearchInput from './components/Input'
+import getRandomGif from './http/getRandomGif'
 import searchGif from './http/searchGif'
 
 function App() {
@@ -9,6 +10,9 @@ function App() {
   const [gifs, setGifs] = useState([])
 
   useEffect(() => {
+    if (value.length === 0)
+      getRandomGif({ limit: 1 }).then((gifs) => setGifs(gifs))
+
     const timer = setTimeout(() => {
       searchGif({ query: value, limit: 1 }).then((gifs) => setGifs(gifs))
     }, 300)
@@ -31,7 +35,7 @@ function App() {
         />
       </div>
       <div className='gifSearch-imageContainer'>
-        <GifContainer gifUrl={gifs[0]?.images.downsized.url} />
+        <GifContainer gifUrl={gifs[0]?.images.downsized_large.url} />
       </div>
     </div>
   )
