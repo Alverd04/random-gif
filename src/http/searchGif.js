@@ -1,5 +1,6 @@
 const BASE_URL = 'api.giphy.com/v1/gifs/search'
-const API_KEY = 'jZZD55t7vAwmz0LVEHF2bLDziot2hg2k'
+
+const API_KEY = process.env.REACT_APP_GIPHY_API_KEY
 
 export default async function searchGif({ query = '', limit = 1 }) {
   const response = await fetch(

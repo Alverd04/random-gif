@@ -1,5 +1,6 @@
 .gifSearch {
-  padding: 32px;
+  padding-top: 32px;
+  width: 100%;
   align-items: center;
   animation-delay: 0.5s;
   animation: 1s fadeIn forwards;
@@ -11,11 +12,26 @@
   justify-content: flex-start;
   opacity: 0;
   width: 100%;
+  color: white;
+  background: linear-gradient(to bottom, #b5e0d9 0%, #e6e47f 100%);
 }
 
 .gifSearch-searchInput-container {
   margin: 16px 0;
-  color: rgb(57, 57, 57);
+  box-shadow: rgba(255, 255, 255, 0.616) 0px 0px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 400px;
+  color: rgb(122, 122, 122);
+}
+
+.gifSearch-title {
+  text-align: center;
+  font-size: 3rem;
+  animation: 3s letterMove infinite;
 }
 
 .gifSearch-imageContainer {
@@ -24,7 +40,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
+  max-width: 900px;
+  box-shadow: rgba(0, 0, 0, 0.109) 0px 3px 8px;
 }
 
 @keyframes fadeIn {

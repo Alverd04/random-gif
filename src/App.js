@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className='gifSearch'>
-      <h1>Gif search</h1>
+      <h1 className='gifSearch-title'>Gif search</h1>
       <div className='gifSearch-searchInput-container'>
         <SearchInput
           value={value}
@@ -35,7 +35,7 @@ function App() {
         />
       </div>
       <div className='gifSearch-imageContainer'>
-        <GifContainer gifUrl={gifs[0]?.images.downsized_large.url} />
+        <GifContainer gifUrl={gifs[0]?.images.downsized_large.url || ''} />
       </div>
     </div>
   )

@@ -10,7 +10,9 @@
   font-weight: inherit;
   color: inherit;
   outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
+}
+
+.search-input::placeholder {
+  color: inherit;
 }
