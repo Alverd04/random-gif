@@ -30,7 +30,7 @@ Doncs ara a esperar al dia 23 de Febrer! Espero veure-us a tots!
 <br />
 <img src="https://user-images.githubusercontent.com/59662722/152339294-15ae3954-5357-4197-b567-5f5470318c7f.gif" alt="fins aviat" />
 
-## Index xerrada
+## Index xerrada
 
 1. Que és i com funciona la web 2.0 actualment?
 2. Que es una API?
